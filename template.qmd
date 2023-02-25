@@ -1,0 +1,74 @@
+---
+title: "<img style='float: left;' src='sylvester_logo_transparent.png'><img style='float: right;' src='scan_logo_nourl_transparent.png'><br>"
+#title: "![](scan360_quarto_template/scan_logo_orange_nourl_transparent.png)<br>![](scan360_quarto_template/sylvester_logo_transparent.png)"
+#subtitle: Quarto Template Test Report Feb 2023
+format:
+  html:
+    #theme: united
+    title-block-banner: "#ed6b05"
+    logo: "scan360_quarto_template/scan_logo_nourl_transparent.png"
+    page-layout: full
+  pdf:
+    documentclass: scrreprt
+    include-in-header: 
+      text: |
+        \usepackage{scrlayer-scrpage}
+        \usepackage{geometry}
+        \usepackage{xcolor}
+        \ohead{\colorbox{orange}{\includegraphics{scan360_quarto_template/scan_logo_orange_nourl_transparent.png}}}
+        \lofoot{Footer text}
+editor: source
+author: SCAN360 Team
+---
+
+
+```{css}
+#| echo: false
+body {
+  background: linear-gradient(to bottom, #b9bacbff, #e3e5e8ff);
+  background-attachment: fixed;
+}
+
+/*
+.quarto-title-meta {
+  grid-column: 3;
+}
+*/
+
+@media screen {
+  div.quarto-title-banner {
+    display: grid;
+  }
+}
+
+@media print {
+  div.quarto-title-banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+ img {
+  page-break-inside: avoid;
+ }
+}
+```
+
+## Title
+
+## First Heading
+
+```{r}
+
+```
+
+## Second Heading
+
+
+## asd
+
+### aasfefve
+
+## aass
+
+![](images/paste-20D910A9.png)
